@@ -14,10 +14,7 @@ import SwiftUI
 
     @Published var meals: [Meal] = []
     @Published var mealResponse: [MealDetailResponse] = []
-    @Published var meal: Meal?
     @Published var mealDetails: MealDetail?
-    @Published var selectedMeal: Meal?
-    @Published var isShowingDetail: Bool = false
 
     func fetchMeals() {
         Task {
