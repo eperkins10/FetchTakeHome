@@ -6,6 +6,8 @@ Assessment guidelines: https://fetch-hiring.s3.amazonaws.com/iOS+coding+exercise
 The **FetchTakeHome** project is an app that fetches a list of desserts from an API endpoint, and displays them in a list. Once a dessert is tapped, the user is navigated to a detail view, where they can find the image, name, category, and ingredients/measurements that are needed in order to successfully recreate the recipe. 
 The app runs on the latest version of Xcode.
 
+## The app is best enjoyed in dark mode!
+
 # Architecture
 Here's a diagram to show the architecture used in the **FetchTakeHome** project
 ![image](https://github.com/user-attachments/assets/44f2e8de-a8d0-4ddf-b973-610f4d5200f4)
