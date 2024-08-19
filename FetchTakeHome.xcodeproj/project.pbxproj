@@ -17,7 +17,22 @@
 		0BD4E3B22C6FC4DE00772C45 /* MealError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3B12C6FC4DD00772C45 /* MealError.swift */; };
 		0BD4E3B62C6FE5A600772C45 /* MealCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3B52C6FE5A600772C45 /* MealCard.swift */; };
 		0BD4E3B92C70546B00772C45 /* MealNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3B82C70546B00772C45 /* MealNetworkManager.swift */; };
+		0BD4E3BB2C71260A00772C45 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3BA2C71260A00772C45 /* Ingredient.swift */; };
+		0BD4E3BD2C71299600772C45 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3BC2C71299600772C45 /* MealDetail.swift */; };
+		0BD4E3BF2C71617300772C45 /* MealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3BE2C71617300772C45 /* MealResponse.swift */; };
+		0BD4E3C12C71618B00772C45 /* MealsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3C02C71618B00772C45 /* MealsResponse.swift */; };
+		0BD4E3C32C72563500772C45 /* MealDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3C22C72563500772C45 /* MealDetailResponse.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BD4E3D02C72D8D900772C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BD4E38D2C6EC93400772C45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BD4E3942C6EC93400772C45;
+			remoteInfo = FetchTakeHome;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0BD4E3952C6EC93400772C45 /* FetchTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +47,23 @@
 		0BD4E3B12C6FC4DD00772C45 /* MealError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealError.swift; sourceTree = "<group>"; };
 		0BD4E3B52C6FE5A600772C45 /* MealCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCard.swift; sourceTree = "<group>"; };
 		0BD4E3B82C70546B00772C45 /* MealNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealNetworkManager.swift; sourceTree = "<group>"; };
+		0BD4E3BA2C71260A00772C45 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		0BD4E3BC2C71299600772C45 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
+		0BD4E3BE2C71617300772C45 /* MealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealResponse.swift; sourceTree = "<group>"; };
+		0BD4E3C02C71618B00772C45 /* MealsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsResponse.swift; sourceTree = "<group>"; };
+		0BD4E3C22C72563500772C45 /* MealDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailResponse.swift; sourceTree = "<group>"; };
+		0BD4E3CC2C72D8D900772C45 /* FetchTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0BD4E3922C6EC93400772C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BD4E3C92C72D8D900772C45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0BD4E3952C6EC93400772C45 /* FetchTakeHome.app */,
+				0BD4E3CC2C72D8D900772C45 /* FetchTakeHomeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				0BD4E3AB2C6ECB2000772C45 /* Meal.swift */,
+				0BD4E3BA2C71260A00772C45 /* Ingredient.swift */,
+				0BD4E3BC2C71299600772C45 /* MealDetail.swift */,
+				0BD4E3BE2C71617300772C45 /* MealResponse.swift */,
+				0BD4E3C02C71618B00772C45 /* MealsResponse.swift */,
+				0BD4E3C22C72563500772C45 /* MealDetailResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +189,24 @@
 			productReference = 0BD4E3952C6EC93400772C45 /* FetchTakeHome.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0BD4E3CB2C72D8D900772C45 /* FetchTakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BD4E3D22C72D8D900772C45 /* Build configuration list for PBXNativeTarget "FetchTakeHomeTests" */;
+			buildPhases = (
+				0BD4E3C82C72D8D900772C45 /* Sources */,
+				0BD4E3C92C72D8D900772C45 /* Frameworks */,
+				0BD4E3CA2C72D8D900772C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BD4E3D12C72D8D900772C45 /* PBXTargetDependency */,
+			);
+			name = FetchTakeHomeTests;
+			productName = FetchTakeHomeTests;
+			productReference = 0BD4E3CC2C72D8D900772C45 /* FetchTakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +219,10 @@
 				TargetAttributes = {
 					0BD4E3942C6EC93400772C45 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					0BD4E3CB2C72D8D900772C45 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0BD4E3942C6EC93400772C45;
 					};
 				};
 			};
@@ -184,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				0BD4E3942C6EC93400772C45 /* FetchTakeHome */,
+				0BD4E3CB2C72D8D900772C45 /* FetchTakeHomeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +255,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BD4E3CA2C72D8D900772C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -207,16 +271,36 @@
 			files = (
 				0BD4E39B2C6EC93400772C45 /* MealView.swift in Sources */,
 				0BD4E3AE2C6ECB3D00772C45 /* MealViewModel.swift in Sources */,
+				0BD4E3BB2C71260A00772C45 /* Ingredient.swift in Sources */,
 				0BD4E3B62C6FE5A600772C45 /* MealCard.swift in Sources */,
 				0BD4E3AC2C6ECB2000772C45 /* Meal.swift in Sources */,
 				0BD4E3B02C6ED6C200772C45 /* MealDetailView.swift in Sources */,
 				0BD4E3992C6EC93400772C45 /* FetchTakeHomeApp.swift in Sources */,
+				0BD4E3BD2C71299600772C45 /* MealDetail.swift in Sources */,
 				0BD4E3B22C6FC4DE00772C45 /* MealError.swift in Sources */,
 				0BD4E3B92C70546B00772C45 /* MealNetworkManager.swift in Sources */,
+				0BD4E3BF2C71617300772C45 /* MealResponse.swift in Sources */,
+				0BD4E3C12C71618B00772C45 /* MealsResponse.swift in Sources */,
+				0BD4E3C32C72563500772C45 /* MealDetailResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BD4E3C82C72D8D900772C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BD4E3D12C72D8D900772C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BD4E3942C6EC93400772C45 /* FetchTakeHome */;
+			targetProxy = 0BD4E3D02C72D8D900772C45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0BD4E3A22C6EC93500772C45 /* Debug */ = {
@@ -409,6 +493,47 @@
 			};
 			name = Release;
 		};
+		0BD4E3D32C72D8D900772C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G85A29FYUQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ethanperkins.developer.FetchTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTakeHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTakeHome";
+			};
+			name = Debug;
+		};
+		0BD4E3D42C72D8D900772C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G85A29FYUQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ethanperkins.developer.FetchTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTakeHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTakeHome";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +551,15 @@
 			buildConfigurations = (
 				0BD4E3A52C6EC93500772C45 /* Debug */,
 				0BD4E3A62C6EC93500772C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BD4E3D22C72D8D900772C45 /* Build configuration list for PBXNativeTarget "FetchTakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BD4E3D32C72D8D900772C45 /* Debug */,
+				0BD4E3D42C72D8D900772C45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,34 +8,44 @@
 import SwiftUI
 
 struct MealCard: View {
-    @State var meal: Meal?
+    @StateObject var viewModel = MealViewModel()
+
+    let meal: Meal
 
     var body: some View {
         VStack(alignment: .leading) {
             VStack {
-                AsyncImage(url: meal?.strMealThumb)
-                    .scaledToFill()
-                    .frame(maxHeight: 130)
-                    .padding(10)
-                .shadow(color: Color.black.opacity(0.3), radius: 4, x: 0, y: 4)
+                AsyncImage(url: URL(string: meal.imageURL), content: { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxHeight: 150)
+                        .frame(width: 350)
+                        .padding(10)
+                }, placeholder: {
+                    Image("")
+                })
             }
-            .frame(maxWidth: .infinity, maxHeight: 200)
+            .frame(maxWidth: 350, maxHeight: 200)
             .cornerRadius(15)
+            .contentShape(Rectangle())
 
             VStack(alignment: .leading, spacing: 8) {
-                Text(meal?.strCategory ?? "dessert")
+                Text(meal.mealName)
                     .font(.headline)
                     .foregroundStyle(.gray)
-
-                Text(meal?.strMeal ?? "pie")
-                    .font(.title3).bold()
-
             }
+            .padding(.horizontal)
         }
+        .padding()
     }
 }
 
 #Preview {
-    MealCard()
+    MealCard(meal: Meal(
+        mealName: "Apam balik",
+        imageURL: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
+        id: "53049"
+        ))
         .preferredColorScheme(.dark)
 }

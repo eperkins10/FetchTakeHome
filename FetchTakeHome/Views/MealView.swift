@@ -15,21 +15,20 @@ struct MealView: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    ForEach(viewModel.meals, id: \.self) { meal in
-                            MealCard(meal: meal)
-                                .onTapGesture {
-                                    Task {
-                                        viewModel.fetchMealsById(id: meal.id)
-                                        viewModel.selectedMeal = meal
-                                    }
-                                }
-                        }
-                    .fullScreenCover(item: $selectedMeal) { meal in
-                            MealDetailView()
-                        }
+                    ForEach(viewModel.meals) { meal in
+                        MealCard(meal: meal)
+                            .padding(.horizontal)
+                            .onTapGesture {
+                                selectedMeal = meal
+                            }
+                    }
+                }
+                .fullScreenCover(item: $selectedMeal) { meal in
+                    MealDetailView(meal: meal)
                 }
                 .padding(.horizontal)
                 .navigationTitle("Desserts")
+                .toolbarBackground(Color(UIColor.systemBackground), for: .navigationBar)
             }
         }
         .padding()

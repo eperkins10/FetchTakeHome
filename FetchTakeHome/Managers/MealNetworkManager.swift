@@ -25,14 +25,15 @@ class MealNetworkManager {
 
         do {
             let decoder = JSONDecoder()
-            return try decoder.decode(MealResponse.self, from: data).meals
+            return try decoder.decode(MealsResponse.self, from: data).meals
         } catch {
+            print("decoding isn't working")
             throw MealError.invalidData
         }
     }
 
     // Fetches meal that is tapped on by the user
-    func fetchMealById(_ mealId: String) async throws -> Meal {
+    func fetchMealDetails(_ mealId: String) async throws -> [MealDetailResponse] {
         let endpoint = "https://themealdb.com/api/json/v1/1/lookup.php?i=\(mealId)"
 
         guard let url = URL(string: endpoint) else {
@@ -47,7 +48,7 @@ class MealNetworkManager {
 
         do {
             let decoder = JSONDecoder()
-            return try decoder.decode(Meal.self, from: data)
+            return try decoder.decode(MealResponse.self, from: data).meals
         } catch {
             throw MealError.invalidData
         }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// This is used to clean up error handling statements
 enum MealError: Error {
     case invalidURL
     case invalidResponse
